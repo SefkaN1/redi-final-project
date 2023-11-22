@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
    }
    .picture {
-    background-image: url("picture.svg"); /* Zamijenite 'slika.jpg' sa putanjom do vaše slike */
+    background-image: url("assets\picture.svg"); /* Zamijenite 'slika.jpg' sa putanjom do vaše slike */
     background-size: cover;
     background-position: center;
     height: 550px; /* Visina pozadine - prilagodite prema potrebi */
