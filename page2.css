@@ -1,0 +1,158 @@
+head {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.Logo {
+    width: 500px;
+    height: 100px;
+    margin-right: 20px;
+}
+.tekst {
+    margin-right: 20px;
+    font-size: 14px;
+    margin-left: auto; 
+}
+
+#header {
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: right;
+}
+
+#logout-button {
+    background-color: rgb(207, 124, 77);
+    color:rgb(250, 250, 250) ;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+}
+
+#logout-button:hover {
+    background-color: rgb(114, 196, 207);
+}
+#Icon {
+    background-color: rgb(250, 250, 250);
+    color: rgb(19, 18, 18);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resume {
+    display: flex;
+    align-items: center;
+}
+
+#resume-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#resume-button {
+    background-color: rgb(250, 250, 250);
+    color: rgb(8, 8, 8);
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#resume-button:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+#saved {
+    display: flex;
+    align-items: center;
+}
+
+#saved-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+#saved-button {
+    background-color: rgb(250, 250, 250);
+    color: rgb(8, 8, 8);
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#saved-button:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+
+#responses {
+    display: flex;
+    align-items: center;
+}
+#responses-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+#response-button {
+    background-color: rgb(250, 250, 250);
+    color: rgb(8, 8, 8);
+    padding: 0px 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#response-button:hover {
+    background-color: rgb(250, 250, 250);
+}
+footer {
+    background-color: rgb(114, 196, 207); 
+    color:  rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+.footer-content {
+   text-align: left;
+   margin-left: 35px;
+}
+
+#content-container {
+    display: flex;
+    align-items: center;
+}
+
+#left-image {
+    width: 200px; /* Prilagodite širinu slike prema potrebi */
+    height: 250px; /* Prilagodite visinu slike prema potrebi */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.Tabela{
+    position: absolute;
+    right: 50px;
+    padding: 20px;
+}
+
+.Tabela form{
+    display:block;
+    flex-direction: column;
+}
+.Tabela label{
+    margin-bottom: 10px;
+}
+
