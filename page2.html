@@ -44,7 +44,7 @@
         </div>
     </div>
  <div>
-    <div id="content-container">
+    <div class="content-container">
         <!-- Left image -->
         <img id="left-image" src="assets/picture (2).png" alt="Your Image">
         <div class="Tabela">
@@ -91,6 +91,57 @@
     </div>
     <div>
         <h4>My portfolio</h4>
+        <div class="link-form">
+            <label for="link">Link:</label>
+            <input type="url" id="link" name="link" placeholder="Enter the link...">
+            <button type="button" onclick="saveLink()">Save</button>
+        </div>
+    
+        <div class="additional-buttons">
+            <button type="button" onclick="saveChanges()" class="save-changes">Save Changes</button>
+            <button type="button" onclick="downloadCV()" class="download-cv">Download CV</button>
+        </div>
+
+    </div>
+    <div>
+        <h5>Saved vacancies</h5>
+        <div class="job-forms">
+            <div class="job-form">
+                <img src="logo1.png" alt="Company Logo">
+                <h3>Company 1</h3>
+                <p>Position: Job Position 1</p>
+                <a href="link-to-job-1" class="respond-button">To Respond</a>
+            </div>
+    
+            <div class="job-form">
+                <img src="logo2.png" alt="Company Logo">
+                <h3>Company 2</h3>
+                <p>Position: Job Position 2</p>
+                <a href="link-to-job-2" class="respond-button">To Respond</a>
+            </div>
+    
+            <div class="job-form">
+                <img src="logo3.png" alt="Company Logo">
+                <h3>Company 3</h3>
+                <p>Position: Job Position 3</p>
+                <a href="link-to-job-3" class="respond-button">To Respond</a>
+            </div>
+    
+            <div class="job-form">
+                <img src="logo4.png" alt="Company Logo">
+                <h3>Company 4</h3>
+                <p>Position: Job Position 4</p>
+                <a href="link-to-job-4" class="respond-button">To Respond</a>
+            </div>
+            
+            <button class="carousel-btn prev-btn" onclick="prevGroup()">Previous</button>
+            <button class="carousel-btn next-btn" onclick="nextGroup()">Next</button>
+        </div>
+
+
+
+
+
 
     </div>
     

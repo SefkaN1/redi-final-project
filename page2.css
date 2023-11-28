@@ -12,6 +12,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 .Logo {
     width: 500px;
@@ -118,10 +122,6 @@ body {
 #response-button:hover {
     background-color: rgb(250, 250, 250);
 }
-h1{
-    font-size: 30px;
-    text-align: left;
-}
 
 footer {
     background-color: rgb(114, 196, 207); 
@@ -134,9 +134,13 @@ footer {
    margin-left: 35px;
 }
 
-#content-container {
+.content-container {
+    background-color: rgb(250, 250, 250);
+    color: rgb(19, 18, 18);
+    padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #left-image {
@@ -182,13 +186,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .forma-container form {
     display: flex;
     flex-direction: column;
-    max-width: 300px; /* Prilagodite maksimalnu širinu forme prema potrebi */
-    margin: 0 auto; /* Centriranje forme unutar futera */
+    max-width: 300px;
 }
 
 .forma-container label {
@@ -225,30 +229,145 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 
 .education form{
     display: flex;
-    flex-direction: column;
-    max-width: 300px; 
-    margin: 0px auto;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
 }
 .education label{
     margin-bottom: 10px;
+    padding: 10px;
 }
 .education input {
-    margin-bottom: 10px;
+    flex: 1;
     padding: 8px;
+    box-sizing: border-box;
 }
 .education button {
     padding: 10px;
-    background-color: #fff; /* Dodajte boju dugmeta prema potrebi */
+    background-color: #fff; 
     color: #333;
     border: none;
     cursor: pointer;
 }
-h1, h2, h3{
+h1, h2, h3, h4, h5{
     text-align: left;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
+}
+.link-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.link-form label {
+    margin-right: 10px;
+}
+
+.link-form input {
+    flex: 1;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.link-form button {
+    padding: 10px;
+    background-color: rgb(220, 89, 13);
+    color:rgb(250, 250, 250);
+    border: none;
+    cursor: pointer;
+}
+.additional-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: rgb(250, 250, 250);
+}
+
+.additional-buttons button {
+    margin: 0 10px;
+    width: 150px; 
+    height: 40px;
+}
+.additional-buttons button.save-changes {
+    background-color: rgb(220,89,13);
+    color: rgb(250, 250, 250);
+}
+
+.additional-buttons button.download-cv {
+    background-color: rgb(220, 89, 13);
+    color: rgb(250, 250, 250);
+}
+
+.job-forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.job-form {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.job-form img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.respond-button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+.forms-carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.forms-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.forms-group {
+    display: flex;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
 }
