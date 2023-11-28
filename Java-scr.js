@@ -28,6 +28,16 @@ function downloadCV() {
     window.location.href = 'CV';
 }
 
+function goToResponsesSection() {
+    const responsesSection = document.getElementById('My-responses');
+    responsesSection.scrollIntoView({ behavior: 'smooth' });
+}
+function goToSavedvacancies() {
+    const responsesSection = document.getElementById('Saved-vacancies');
+    responsesSection.scrollIntoView({ behavior: 'smooth' });
+}
+document.getElementById('My responses').addEventListener('click', goToMyresponsesSection);
+document.getElementById('Saved vacancies').addEventListener('click', goToSavedvacancies);
 
 
 

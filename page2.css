@@ -17,23 +17,46 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+h1, h2, h3, h4, h5{
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 30px;
+}
+p {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    margin-left: 20px;
+}
 .Logo {
     width: 500px;
     height: 100px;
     margin-right: 20px;
+}
+.Logo2 {
+    width: 300px;
+    height: 75px;
+    margin-right: auto;
+    margin-left: 20px;
 }
 .tekst {
     margin-right: 20px;
     font-size: 14px;
     margin-left: auto; 
 }
-
 #header {
     background-color: rgb(250, 250, 250);
     color: rgb(0, 0, 0);
     padding: 10px;
     text-align: right;
 }
+  
+hr {
+    height: 2px;
+    background-color:rgb(114, 196, 207);
+    border-color: rgb(114, 196, 207);
+  }
 
 #logout-button {
     background-color: rgb(207, 124, 77);
@@ -47,6 +70,36 @@ body {
 #logout-button:hover {
     background-color: rgb(114, 196, 207);
 }
+
+.link-form button {
+    padding: 10px;
+    background-color: rgb(220, 89, 13);
+    color:rgb(250, 250, 250);
+    border: none;
+    cursor: pointer;
+}
+.additional-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: rgb(250, 250, 250);
+}
+
+.additional-buttons button {
+    margin: 0 10px;
+    width: 150px; 
+    height: 40px;
+}
+.additional-buttons button.save-changes {
+    background-color: rgb(220,89,13);
+    color: rgb(250, 250, 250);
+}
+
+.additional-buttons button.download-cv {
+    background-color: rgb(220, 89, 13);
+    color: rgb(250, 250, 250);
+}
+
 #Icon {
     background-color: rgb(250, 250, 250);
     color: rgb(19, 18, 18);
@@ -123,16 +176,7 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
-footer {
-    background-color: rgb(114, 196, 207); 
-    color:  rgb(0, 0, 0); 
-    padding: 20px 0; 
-}
 
-.footer-content {
-   text-align: left;
-   margin-left: 35px;
-}
 
 .content-container {
     background-color: rgb(250, 250, 250);
@@ -170,55 +214,10 @@ footer {
     padding: 8px;
 }
 
-.Logo2 {
-    width: 300px;
-    height: 75px;
-    margin-right: auto;
-    margin-left: 20px;
-}
-footer {
-    background-color: rgb(114, 196, 207);
-    color:rgb(0,0,0);
-    padding: 20px;
-}
 
-.forma-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-}
 
-.forma-container form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-}
-
-.forma-container label {
-    margin-bottom: 10px;
-}
-
-.forma-container input {
-    margin-bottom: 10px;
-    padding: 8px;
-}
-
-.forma-container button {
-    padding: 10px;
-    background-color: #fff; /* Dodajte boju dugmeta prema potrebi */
-    color: #333;
-    border: none;
-    cursor: pointer;
-}
 .use {
     margin-bottom: 5px;
-  }
-  
-  hr {
-    height: 2px;
-    background-color:rgb(114, 196, 207);
-    border-color: rgb(114, 196, 207);
   }
   
   .bottom-line {
@@ -255,11 +254,7 @@ footer {
     border: none;
     cursor: pointer;
 }
-h1, h2, h3, h4, h5{
-    text-align: left;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-}
+
 .link-form {
     display: flex;
     flex-direction: row;
@@ -276,35 +271,6 @@ h1, h2, h3, h4, h5{
     flex: 1;
     padding: 8px;
     box-sizing: border-box;
-}
-
-.link-form button {
-    padding: 10px;
-    background-color: rgb(220, 89, 13);
-    color:rgb(250, 250, 250);
-    border: none;
-    cursor: pointer;
-}
-.additional-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    color: rgb(250, 250, 250);
-}
-
-.additional-buttons button {
-    margin: 0 10px;
-    width: 150px; 
-    height: 40px;
-}
-.additional-buttons button.save-changes {
-    background-color: rgb(220,89,13);
-    color: rgb(250, 250, 250);
-}
-
-.additional-buttons button.download-cv {
-    background-color: rgb(220, 89, 13);
-    color: rgb(250, 250, 250);
 }
 
 .job-forms {
@@ -337,37 +303,56 @@ h1, h2, h3, h4, h5{
     border-radius: 4px;
 }
 
-
-.forms-carousel-container {
-    position: relative;
-    max-width: 800px;
-    margin: 20px auto;
+footer {
+    background-color: rgb(114, 196, 207); 
+    color:  rgb(0, 0, 0); 
+    padding: 20px 0; 
 }
 
-.forms-carousel {
+.footer-content {
+   text-align: left;
+   margin-left: 35px;
+}
+.forma-container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.forms-group {
+.forma-container form {
     display: flex;
+    flex-direction: column;
+    max-width: 300px;
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.forma-container label {
+    margin-bottom: 10px;
+}
+
+.forma-container input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.forma-container button {
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #fff; /* Dodajte boju dugmeta prema potrebi */
+    color: #333;
     border: none;
     cursor: pointer;
 }
-
-.prev-btn {
-    left: 0;
+.instagram-button {
+    position: flex;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: right;
+    text-decoration: none;
 }
 
-.next-btn {
-    right: 0;
+.instagram-button img {
+    width: 30px; /* Prilagodite veličinu ikonice prema potrebi */
+    height: 30px;
+    margin-right: 10px; /* Dodajte razmak između ikonice i teksta ako je potrebno */
 }
