@@ -9,15 +9,15 @@ header {
     padding: 10px;
 }
 body {
-    background-image: url("C:\Users\sefka\Downloads\picture.svg"); /* Postavljanje slike kao pozadine */
-    background-size: cover; /* Prilagođavanje veličine slike da pokrije celu površinu ekrana */
+     /* Слика као позадина */
+    background-size: cover; /* Слика преко целог екрана */
     background-repeat: no-repeat;
    }
    .picture {
-    background-image: url("assets/picture.svg"); /* Zamijenite 'slika.jpg' sa putanjom do vaše slike */
+    background-image: url("assets/picture.svg"); 
     background-size: cover;
     background-position: center;
-    height: 550px; /* Visina pozadine - prilagodite prema potrebi */
+    height: 600px; /* Висина позадине */
     position: relative;
     width: 100%;
 
@@ -97,8 +97,8 @@ img {
 .students-section {
     position: relative;
     width: 100%;
-    height: 400px; /* Visina slike */
-    background-image: url("C:\Users\sefka\Downloads\picture.png"); /* Postavljanje slike kao pozadine */
+    height: 600px; /* Висина слике */
+    background-image: url("assets/picture.svg"); /* Слика као позадина */
     background-size: cover;
     background-position: center;
 }
@@ -114,11 +114,22 @@ img {
     border: 2px solid #827d7d;
     border-radius: 5px;
 }
+
+
+.slideshow-container {
+    width: 350px;
+    height: 150px;
+  }
+.mySlides{
+    width: 250px;
+    height: 250px;
+
+}
+
 footer {
-    background-color: rgb(114, 196, 207); /* Boja pozadine donjeg dela */
-    color: #fff; /* Boja teksta */
-    text-align: center; /* Centriranje teksta */
-    padding: 20px 0; /* Unutrašnji razmak */
+    background-color: rgb(114, 196, 207); 
+    color:  rgb(0, 0, 0); 
+    padding: 20px 0; 
 }
 
 .footer-content {
@@ -126,38 +137,72 @@ footer {
    margin-left: 35px;
 }
 
-img {
-    width: 100%;
+
+.forma-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.forma-container form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.forma-container label {
+    margin-bottom: 10px;
+}
+
+.forma-container input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.forma-container button {
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #fff; /* Боја дугмета */
+    color: #333;
     border: none;
     cursor: pointer;
 }
-
-.prev {
-    left: 10px;
+.use{
+    text-align: left;
+}
+.social-icons-container {
+    position: flex;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row; /* Хоризонтално постављање */
 }
 
-.next {
-    right: 10px;
+.social-icon {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Без позадине */
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 10px; /* Додај размак између иконица */
 }
-.swiper {
-    width: 350px;
-    height: 150px;
-  }
 
-  .swiper-button-prev{
+.social-icon img {
+    width: 30px; /* Прилагоди величину иконица */
+    height: 30px;
+}
+
+.logo2 {
+    width: 300px;
+    height: 75px;
+    margin-right: auto;
     margin-left: 20px;
-    margin-right: 20px;
-  }
-  .swiper-button-next{
-    margin-left: 20px;
-    margin-right: 20px;
+}
+.bottom-line{
+    margin-top: 25px;
+}
+hr {
+    height: 2px;
+    background-color:rgb(114, 196, 207);
+    border-color: rgb(114, 196, 207);
   }

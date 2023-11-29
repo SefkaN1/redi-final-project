@@ -18,8 +18,14 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
-h1, h2, h3, h4, h5{
+h1, h2, h3{
     text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 30px;
+}
+h5, h4 {
+    text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     margin-left: 30px;
@@ -94,8 +100,8 @@ hr {
 }
 
 #left-image {
-    width: 200px; /* Prilagodite širinu slike prema potrebi */
-    height: 250px; /* Prilagodite visinu slike prema potrebi */
+    width: 200px; /* Ширина слике */
+    height: 250px; /* Висина слике */
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -289,7 +295,7 @@ footer {
 
 .forma-container button {
     padding: 10px;
-    background-color: #fff; /* Dodajte boju dugmeta prema potrebi */
+    background-color: #fff; /* Додавање дугмета */
     color: #333;
     border: none;
     cursor: pointer;
@@ -304,7 +310,7 @@ footer {
 }
 
 .instagram-button img {
-    width: 30px; /* Prilagodite veličinu ikonice prema potrebi */
+    width: 30px; /* Величина иконице */
     height: 30px;
-    margin-right: 10px; /* Dodajte razmak između ikonice i teksta ako je potrebno */
+    margin-right: 10px; /* Размак између иконица */
 }
