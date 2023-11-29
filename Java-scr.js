@@ -16,7 +16,7 @@ document.getElementById('response-button').addEventListener('click', function() 
 });
 function saveLink() {
     var link = document.getElementById('link').value;
-    console.log('Link saved:', link);
+    console.log('Link saved', link);
 }
 
 function saveChanges() {
