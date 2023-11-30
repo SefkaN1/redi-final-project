@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="page2.css">
     <script src="Java-scr.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <header>
     <div class="logo">
@@ -15,38 +17,38 @@
         <button>About alumi</button>
         <button>Contact us</button>
     </div>
-    <div id="header">
+    <div class="header">
         <!-- Mala profilna slika -->
-        <img id="profile-image" src="assets/picture (2).png" alt="User Profile Image" width="30" height="30">
+        <img class="profile-image" src="assets/picture (2).png" alt="User Profile Image" width="30" height="30">
 
         <!-- Logout button -->
-        <button id="logout-button">Log out</button>
+        <button class="logout-button">Log out</button>
         </div>
 </header>
 <body>
-    <div id="Icon">
+    <div class="Icon">
         <!-- Levo -->
-        <div id="resume">
-            <img id="resume-icon" src="assets/icon+txt_1.png" alt="User Icon">
-            <button id="resume-button">My resume</button>
+        <div class="resume">
+            <img class="resume-icon" src="assets/icon+txt_1.png" alt="User Icon">
+            <button class="resume-button">My resume</button>
         </div>
 
         <!-- Center  -->
         <div class="saved">
-            <img id="saved-icon" src="assets/icon+txt_2.png" alt="Saved Icon">
-            <button id="saved-button" onclick="Savedvacanvies()">Saved vacancies</button>
+            <img class="saved-icon" src="assets/icon+txt_2.png" alt="Saved Icon">
+            <button class="saved-button" id="vacancies-button">Saved vacancies</button>
         </div>
 
         <!-- Desno -->
         <div class="responses">
-            <img id="responses-icon" src="assets/icon+txt_3.png" alt="Response Icon">
-             <button id="response-button" onclick="Myresponses()">My responses</button>
+            <img class="responses-icon" src="assets/icon+txt_3.png" alt="Response Icon">
+             <button id="responses-button" class="responses-button">My responses</button>
         </div>
     </div>
  <div>
     <div class="content-container">
         <!-- Left image -->
-        <img id="left-image" src="assets/picture (2).png" alt="Your Image">
+        <img class="left-image" src="assets/picture (2).png" alt="Your Image">
         <div class="Tabela">
             <form action="#" method="post">
                 <label for="Name">Name:</label>
@@ -63,31 +65,37 @@
  </div>   
     <div>
         <h1>EDUCATION</h1>
-        <p>Please input here your education</p> 
-            <p>Degree (if you want it) and the</p>
-            <p>Year of starting and graduating:</p>
+        <div class="input-form"> 
+        <p class="question">Please input here your education<br/>
+            Degree (if you want it) and the<br/>
+            Year of starting and graduating:</p>
         <form action="#" method="post">
             <label for="education"></label>
-            <textarea type="education" id="education" name="education" rows="3" cols="20" required></textarea><br><br>
+            <textarea type="education" class="education" name="education" rows="3" cols="20" required></textarea><br><br>
         </form>
+        </div>
     </div>
     <div>
         <h2>EXPERIENCE</h2>
-        <p>Write here name of the companies you work for</p>
-        <p>When did you work and how long</p>
-        <p>And your position in that companie</p>
+       <div class="input-form"> 
+        <p class="question1">Write here name of the companies you work for<br/>
+        When did you work and how long<br/>
+        And your position in that companie</p>
         <form action="#" method="post">
             <label for="education"></label>
-            <textarea type="education" id="education" name="education" rows="3" cols="20" required></textarea><br><br>
+            <textarea type="education" class="education" name="education" rows="3" cols="20" required></textarea><br><br>
         </form>
+    </div>
     </div>
     <div>
         <h3>SKILLS</h3>
-        <p>What is your skills?</p>
+        <div class="input-form"> 
+        <p class="question2">What is your skills?</p>
         <form action="#" method="post">
             <label for="education"></label>
-            <textarea type="education" id="education" name="education" rows="3" cols="20" required></textarea><br><br>
+            <textarea type="education" class="education" name="education" rows="3" cols="20" required></textarea><br><br>
         </form>
+        </div>
     </div>
     <div>
         <h4>My portfolio</h4>
@@ -105,53 +113,66 @@
     </div>
 
     
-    <div>
+    <div id="Vacancies-section">
         <h5>Saved vacancies</h5>
-        <div>
-        <form method="post">
-            <fieldset>
-                <label 
-                 class="job-form">
-                    <img src="assets/danske bank.jpg" alt="Company Logo">
-                    <h3>Danske Bank</h3>
-                    <p>Position: Developer</p>
-                    <a href="https://ejqi.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14908/?utm_medium=jobboard&utm_source=job.danskebank.lt"
-                     class="respond-button">To Respond</a>
-                ></label>
-                
-            </fieldset>
-            <fieldset>
-                <label 
-                 class="job-form">
-                    <img src="assets/danske bank.jpg" alt="Company Logo">
-                    <h3>Danske Bank</h3>
-                    <p>Position: Security Consultancy Internship</p>
-                    <a href="https://ejqi.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14905/?utm_medium=jobboard&utm_source=job.danskebank.lt"
-                     class="respond-button">To Respond</a>
-                ></label>
-            </fieldset>
-            <fieldset>
-                <label 
-                 class="job-form">
-                    <img src="assets/stibodx.jpg" alt="Company Logo">
-                    <h3>Stibo DX </h3>
-                    <p>Position: Solution Advisor</p>
-                    <a href="https://www.linkedin.com/jobs/view/3770896307" class="respond-button">To Respond</a>
-                ></label>
-            </fieldset>
-            <fieldset>
-                <label 
-                 class="job-form">
-                    <img src="assets/linkedin.png" alt="Company Logo">
-                    <h3>LEGO Group</h3>
-                    <p>Position: Senior Service Designer</p>
-                    <a href="https://www.linkedin.com/jobs/view/3766325663" class="respond-button">To Respond</a>
-                ></label>
-            </fieldset>
-          </form>
+        <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <fieldset>
+                    <label 
+                     class="job-form">
+                        <img src="assets/danske bank.jpg" alt="Company Logo">
+                        <h3>Danske Bank</h3>
+                        <p>Position: Developer</p>
+                        <a href="https://ejqi.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14908/?utm_medium=jobboard&utm_source=job.danskebank.lt"
+                         class="respond-button">To Respond</a>
+                    </label>
+                </fieldset>
+              </div>
+              <div class="swiper-slide">
+                <fieldset>
+                    <label 
+                     class="job-form">
+                        <img src="assets/danske bank.jpg" alt="Company Logo">
+                        <h3>Danske Bank</h3>
+                        <p>Position: Security Consultancy Internship</p>
+                        <a href="https://ejqi.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/14905/?utm_medium=jobboard&utm_source=job.danskebank.lt"
+                         class="respond-button">To Respond</a>
+                    </label>
+                </fieldset>
+              </div>
+              <div class="swiper-slide">
+                <fieldset>
+                    <label 
+                     class="job-form">
+                        <img src="assets/stibodx.jpg" alt="Company Logo">
+                        <h3>Stibo DX </h3>
+                        <p>Position: Solution Advisor</p>
+                        <a href="https://www.linkedin.com/jobs/view/3770896307" class="respond-button">To Respond</a>
+                    </label>
+                </fieldset>
+              </div>
+              <div class="swiper-slide">
+                <fieldset>
+                    <label 
+                     class="job-form">
+                        <img src="assets/legoo.jpg" alt="Company Logo">
+                        <h3>LEGO Group</h3>
+                        <p>Position: Senior Service Designer</p>
+                        <a href="https://www.linkedin.com/jobs/view/3766325663" class="respond-button">To Respond</a>
+                    </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         </div>
     </div>
-    <div>
+    <div id="response-section">
         <h5>My responses</h5>
      </div>
     <footer>

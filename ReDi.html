@@ -6,10 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="Stylee-ReDi.css">
     <script src="ReDi-java.js" defer></script>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <header>
     <div class="logo">
@@ -29,10 +27,9 @@
 <body>
     <header>
         <div class="picture">
-            <img src="assets/picture.svg" alt="Our Students">
         </div>
-        <div class="cta-button">
-            <a href="#" onclick="yourFunction()">Our Students</a>
+        <div>
+            <button type="button" onclick="goToPage2()"class="cta-button">Write CV</button>
         </div>
     </header>
     <h1>ABOUT US</h1>
@@ -44,25 +41,59 @@
            data analysis, UX/UI Design, cybersecurity and more, which has influenced our community to grow
            and expand through the years
         </p>
-        <h2>Feedback from students</h2>
+        <h2>FEEDBACK FROM STUDENTS</h2>
     </header>
-    <div class="swiper">
-        <!-- Additional required wrapper -->
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="assets/amazon.png"></div>
-            <div class="swiper-slide"><img src="assets/chanel.png"></div>
-            <div class="swiper-slide"><img src="assets/th (1).jpg"></div>
-            ...
+          <div class="swiper-slide">
+            <fieldset>
+                <label 
+                 class="Cart">
+                    <img src="assets/Nadiia.png" alt="Nadiia">
+                    <h3>Nadiia</h3>
+                    <p>ReDi School transformed my skills!<br/>
+                        In-depth web development knowledge, <br/>
+                        teamwork mastery all thanks to this incredible experience. <br/>
+                        Grateful for the support and the chance to <br/>
+                        dive into an intense educational journey</p>
+                </label>
+            </fieldset>
+          </div>
+          <div class="swiper-slide">
+            <fieldset>
+                <label 
+                 class="Cart">
+                    <img src="assets/Wiktoria.png" alt="Wiktoria">
+                    <h3>Wiktoria</h3>
+                    <p>Life-changing experience at ReDi School! <br/>
+                        Not just technical skills but a community<br/>
+                        of like-minded individuals. Top-notch instructors, <br/>
+                        hands-on projects the perfect combo to apply theory to practice.</p>
+                </label>
+            </fieldset>
+          </div>
+          <div class="swiper-slide">
+            <fieldset>
+                <label 
+                 class="Cart">
+                    <img src="assets/Iliriana.jpg" alt="Iliriana">
+                    <h3>Iliriana</h3>
+                    <p>Completed ReDi School with confidence in web development.<br/>
+                         Intense courses, emphasis on practical skills <br/>
+                         the ideal formula for rapid and profound learning. <br/>
+                         Highly recommend to all!</p>
+                </label>
+            </fieldset>
+          </div>
         </div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-    </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="ReDi-java.js"></script>
         </div>
-         <h3>Our corses</h3>
+         <h3>OUR CORSES</h3>
          <p>Our courses at ReDI School Aarhus were created to give people the digital skills they need to
              succeed in the quickly changing world of technology today. Our wide selection of courses
              accommodates students with varying backgrounds and ability levels.
@@ -74,25 +105,44 @@
             Data Analytics, JavaScript (I II), Cybersecurity and Machine Learning, UX/UI Design Basics
          </p>
            
-            <h4>Strategic Partners & Sponsors</h4>
-           
-            <div class="slideshow-container">
-                <div class="mySlides">
-                    <img src="assets/chanel.png" alt="Image 1">
+            <h4>STRATEGIC PARTNERS & SPONSORS</h4>
+            
+            <div class="swiper myAutoSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/amazon.png" alt="Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/chanel.png" alt="Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/coca-cola.png" alt="Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/loreal-fund.png" alt="Image 4">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/cognizant.png" alt="Image 5">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/db-stiftung.png" alt="Image 6">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/microsoft.png" alt="Image 7">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/velux.png" alt="Image 8">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/Munich+Ministry+for+Family+Logo+BMFSFJ.jpg" alt="Image 9">
+                  </div>
                 </div>
-                <div class="mySlides">
-                    <img src="assets/amazon.png" alt="Image 2">
-                </div>
-                <div class="mySlides">
-                    <img src="assets/lego.jpg" alt="Image 3">
-                </div>
-                <div class="mySlides">
-                    <img src="assets/chanel.png" alt="Image 4">
-                </div>
-                <div class="mySlides">
-                    <img src="assets/amazon.png" alt="Image 5">
-                </div>
-            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <footer>
         <div class="footer-content">

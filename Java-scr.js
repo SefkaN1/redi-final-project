@@ -1,19 +1,19 @@
-// Logout button
-document.getElementById('logout-button').addEventListener('click', function() {
-    alert('Logging out...');
-}); 
-// Resume button
- document.getElementById('resume-button').addEventListener('click', function() {
-    alert('Redirecting to My Resume...');
-});
-//Saved button
-document.getElementById('saved-button').addEventListener('click', function() {
-    alert('Redirecting to saved vacancies...');
-});
-//Responses
-document.getElementById('response-button').addEventListener('click', function() {
-    alert('Redirecting to My responses...');
-});
+// // Logout button
+// document.getElementById('logout-button').addEventListener('click', function() {
+//     alert('Logging out...');
+// }); 
+// // Resume button
+//  document.getElementById('resume-button').addEventListener('click', function() {
+//     alert('Redirecting to My Resume...');
+// });
+// //Saved button
+// document.getElementById('saved-button').addEventListener('click', function() {
+//     alert('Redirecting to saved vacancies...');
+// });
+// //Responses
+// document.getElementById('response-button').addEventListener('click', function() {
+//     alert('Redirecting to My responses...');
+// });
 function saveLink() {
     var link = document.getElementById('link').value;
     console.log('Link saved', link);
@@ -25,19 +25,19 @@ function saveChanges() {
 
 function downloadCV() {
     console.log('Downloading CV...');
-    window.location.href = 'CV';
+    window.location.href = 'ReDi School.docx';
 }
 
 function goToResponsesSection() {
-    const responsesSection = document.getElementById('My-responses');
+    const responsesSection = document.getElementById('response-section');
     responsesSection.scrollIntoView({ behavior: 'smooth' });
 }
 function goToSavedvacancies() {
-    const responsesSection = document.getElementById('Saved-vacancies');
+    const responsesSection = document.getElementById('Vacancies-section');
     responsesSection.scrollIntoView({ behavior: 'smooth' });
 }
-document.getElementById('My responses').addEventListener('click', goToMyresponsesSection);
-document.getElementById('Saved vacancies').addEventListener('click', goToSavedvacancies);
+document.getElementById('responses-button').addEventListener('click', goToResponsesSection);
+document.getElementById('vacancies-button').addEventListener('click', goToSavedvacancies);
 
 
 
@@ -64,3 +64,53 @@ function updateFormsCarousel() {
 
     formsCarousel.style.transform = `translateX(${translateXValue})`;
 }
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var appendNumber = 4;
+  var prependNumber = 1;
+  document
+    .querySelector(".prepend-2-slides")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.prependSlide([
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      ]);
+    });
+  document
+    .querySelector(".prepend-slide")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.prependSlide(
+        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+      );
+    });
+  document
+    .querySelector(".append-slide")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.appendSlide(
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+      );
+    });
+  document
+    .querySelector(".append-2-slides")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      swiper.appendSlide([
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+        '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+      ]);
+    });

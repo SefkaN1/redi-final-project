@@ -41,6 +41,21 @@ p {
     height: 100px;
     margin-right: 20px;
 }
+
+.input-form{
+    display: flex;
+}
+
+.question {
+    margin-right: 20%;
+}
+.question1{
+    margin-right: 13%;
+}
+.question2{
+    margin-right: 26%;
+}
+
 .Logo2 {
     width: 300px;
     height: 75px;
@@ -52,7 +67,7 @@ p {
     font-size: 14px;
     margin-left: auto; 
 }
-#header {
+.header {
     background-color: rgb(250, 250, 250);
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -65,7 +80,7 @@ hr {
     border-color: rgb(114, 196, 207);
   }
 
-#logout-button {
+.logout-button {
     background-color: rgb(207, 124, 77);
     color:rgb(250, 250, 250) ;
     padding: 5px 10px;
@@ -74,7 +89,7 @@ hr {
     margin-left: 10px;
 }
 
-#logout-button:hover {
+.logout-button:hover {
     background-color: rgb(114, 196, 207);
 }
 
@@ -91,21 +106,23 @@ hr {
     margin-top: 20px;
     color: rgb(250, 250, 250);
 }
-.content-container {
+
+.left-image {
+    align-items: flex-start;
+    width: 200px; /* Ширина слике */
+    height: 250px; /* Висина слике */
+}
+.content-container{
+    display: flex;
+    align-items: normal;
+}
+.Tabela{
     display: flex;
     flex-direction: row;
-    align-items: center;
     max-width: 400px;
     margin: 20px auto;
 }
-
-#left-image {
-    width: 200px; /* Ширина слике */
-    height: 250px; /* Висина слике */
-    margin-right: 20px;
-    margin-left: 20px;
-}
-#Icon {
+.Icon {
     background-color: rgb(250, 250, 250);
     color: rgb(19, 18, 18);
     padding: 10px;
@@ -114,18 +131,18 @@ hr {
     justify-content: space-between;
 }
 
-#resume {
+.resume {
     display: flex;
     align-items: center;
 }
 
-#resume-icon {
+.resume-icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
 
-#resume-button {
+.resume-button {
     background-color: rgb(250, 250, 250);
     color: rgb(8, 8, 8);
     padding: 5px 10px;
@@ -133,21 +150,21 @@ hr {
     border: none;
 }
 
-#resume-button:hover {
+.resume-button:hover {
     background-color: rgb(250, 250, 250);
 }
 
-#saved {
+.saved {
     display: flex;
     align-items: center;
 }
 
-#saved-icon {
+.saved-icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-#saved-button {
+.saved-button {
     background-color: rgb(250, 250, 250);
     color: rgb(8, 8, 8);
     padding: 5px 10px;
@@ -155,21 +172,21 @@ hr {
     border: none;
 }
 
-#saved-button:hover {
+.saved-button:hover {
     background-color: rgb(250, 250, 250);
 }
 
 
-#responses {
+.responses {
     display: flex;
     align-items: center;
 }
-#responses-icon {
+.responses-icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-#response-button {
+.response-button {
     background-color: rgb(250, 250, 250);
     color: rgb(8, 8, 8);
     padding: 0px 5px;
@@ -177,7 +194,7 @@ hr {
     border: none;
 }
 
-#response-button:hover {
+.response-button:hover {
     background-color: rgb(250, 250, 250);
 }
 
@@ -221,7 +238,6 @@ hr {
     border: none;
     cursor: pointer;
 }
-
 .job-forms {
     display: flex;
     flex-wrap: wrap;
@@ -260,11 +276,61 @@ label {
     margin-left: 20px;
     margin-right: 20px;
   }
+.education{
+    text-align: center;
+        width: 450px;
+        height: 150px;
+      
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
 
 footer {
     background-color: rgb(114, 196, 207); 
     color:  rgb(0, 0, 0); 
-    padding: 20px 0; 
+    padding: 10px 0; 
 }
 
 .footer-content {
@@ -274,14 +340,16 @@ footer {
 .forma-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
-}
+    align-items: flex-end;
+    
+    }
 
 .forma-container form {
     display: flex;
     flex-direction: column;
     max-width: 300px;
+    margin-right: 5px;
 }
 
 .forma-container label {
