@@ -25,7 +25,7 @@ function saveChanges() {
 
 function downloadCV() {
     console.log('Downloading CV...');
-    window.location.href = 'ReDi School.docx';
+    window.location.href = 'assets/Project Report.pdf';
 }
 
 function goToResponsesSection() {
