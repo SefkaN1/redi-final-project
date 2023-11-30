@@ -12,8 +12,17 @@ body {
      /* Слика као позадина */
     background-size: cover; /* Слика преко целог екрана */
     background-repeat: no-repeat;
+    width: 100%;
+     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    
    }
-   .picture {
+.picture {
     background-image: url("assets/picture.svg"); /* Zamijenite 'slika.jpg' sa putanjom do vaše slike */
     background-size: cover;
     background-position: center;
@@ -28,14 +37,13 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     background-color: rgb(255, 98, 0);
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.cta-button a {
-color: white
-}
-.cta-button a:hover {
+
+.cta-button:hover {
     color: rgb(226, 177, 85)
 }
 .cta-button-container{
@@ -143,67 +151,100 @@ img {
     border-radius: 20px;
   }
 
-footer {
+  footer {
     background-color: rgb(114, 196, 207); 
     color:  rgb(0, 0, 0); 
-    padding: 20px 0; 
+    padding: 10px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {
    text-align: left;
    margin-left: 35px;
 }
-
-
-.forma-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px;
+.information {
+    max-width: 400px;
+    margin:auto;
+    position:absolute;
+    right:0;
+    margin-right:40px;
 }
-
-.forma-container form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
+.information label{
+    display:inline-block;
+    margin-bottom:10px;
 }
-
-.forma-container label {
+.information input, textarea{
+    vertical-align: top;
     margin-bottom: 10px;
+    margin-right:10px;
+    float:inline-end;
 }
-
-.forma-container input {
-    margin-bottom: 10px;
-    padding: 8px;
+.check{
+    max-width: 400px;
+    margin-top:180px;
+    position:absolute;
+    right:0;
+    margin-right:20px;
+    text-align:center;
 }
-
-.forma-container button {
-    padding: 10px;
-    background-color: #fff; /* Боја дугмета */
-    color: #333;
-    border: none;
-    cursor: pointer;
+.check label{
+    display:inline-block;
+    margin-bottom:10px;
 }
-.use{
-    text-align: left;
+.check input{
+    vertical-align:top;
+    margin-bottom:10px;
+    margin-right:10px;
+    float:inline-start;
 }
-
-.social-icon img {
-    width: 30px; /* Прилагоди величину иконица */
-    height: 30px;
-}
-
-.logo2 {
-    width: 300px;
-    height: 75px;
-    margin-right: auto;
-    margin-left: 20px;
-}
-.bottom-line{
-    margin-top: 25px;
+.send-button{
+    max-width: 400px;
+    position:absolute;
+    right:0;
+    margin-right:150px;
+    margin-top:220px;
 }
 hr {
     height: 2px;
     background-color:rgb(114, 196, 207);
     border-color: rgb(114, 196, 207);
+}
+.bottom-line {
+    margin-top: 250px;
+  }
+
+.instagram img {
+    width: 30px; /* Величина иконице */
+    height: 30px;
+    margin-right: 10px; /* Размак између иконица */
+}
+.instagram{
+    position:absolute;
+    right:0;
+    margin-right:20px;
+    bottom:5px;
+}
+.linkedin img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.linkedin{
+    position: absolute;
+    right:0;
+    margin-right:60px;
+    bottom: 5px;
+}
+.Logo2 {
+
+    position:absolute;
+    left:0;
+    margin-left:20px;
+    margin-top:170px;
+       
+   }
+   .use{
+    text-align: left;
 }

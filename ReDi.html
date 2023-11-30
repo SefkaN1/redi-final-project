@@ -29,7 +29,7 @@
         <div class="picture">
         </div>
         <div>
-            <button type="button" onclick="goToPage2()"class="cta-button">Write CV</button>
+            <button type="button" onclick="goToPage2()"class="cta-button">Add CV</button>
         </div>
     </header>
     <h1>ABOUT US</h1>
@@ -93,7 +93,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="ReDi-java.js"></script>
         </div>
-         <h3>OUR CORSES</h3>
+         <h3>OUR COURSES</h3>
          <p>Our courses at ReDI School Aarhus were created to give people the digital skills they need to
              succeed in the quickly changing world of technology today. Our wide selection of courses
              accommodates students with varying backgrounds and ability levels.
@@ -149,33 +149,41 @@
             <p1>Do you have any question? Feel free to contact us.</p1>
         </div>
         
-        <div class="forma-container">
+        <div class="footer-container">
             <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="ime" name="ime" required><br><br>
+                <div class="information">
+                    <label for="name">Name:</label>
+                    <input type="text" id="ime" name="ime" required><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
 
-                <label for="message">Message:</label>
-                <textarea type="text" id="message" name="message" rows="3" cols="20" required></textarea><br><br>
+                    <label for="message">Message:</label>
+                    <textarea type="text" id="message" name="message" rows="3" required></textarea><br><br>
+                </div>
+                <div class="check">
                 <input type="checkbox" id="Agree" name="Agree" required>
-                <label for="Agree">I agree to processing of Personal data</label><br><br>
+                <label for="Agree">I agree to processing of Personal data</label>
+                </div>
+                <div class="send-button">
                 <input type="submit" value="SEND">
+            </div>
             </form>
         </div>
-        <div class="logo2">
-            <img src="assets/Logo (3).svg" alt="Logo2">
-        </div>
-        <hr class="bottom-line">
-        <p class="use">By continuing past this page you agree to our Terms of Use </p>
-        <a href="https://www.instagram.com/redischool_aarhus/" target="_blank" class="social-icon instagram">
-            <img src="assets/inst.png" alt="Instagram Icon">
-        </a>
+    </div>
+    <div class="Logo2">
+        <img src="assets/Logo (3).svg" alt="Logo2">
+    </div>
     
-        <a href="https://www.linkedin.com/company/redi-school-for-digital-integration-aarhus/" target="_blank" class="social-icon linkedin">
-            <img src="assets/linkedin.png" alt="LinkedIn Icon">
-        </a>
+    <hr class="bottom-line">
+    <p class="use">By continuing past this page you agree to our Terms of Use </p>
+    <a href="https://www.instagram.com/redischool_aarhus/" target="_blank" class="instagram">
+        <img src="assets/inst.png" alt="Instagram Icon">
+    </a>
+
+    <a href="https://www.linkedin.com/company/redi-school-for-digital-integration-aarhus/" target="_blank" class="linkedin">
+        <img src="assets/linkedin.png" alt="LinkedIn Icon">
+    </a>
     </footer>
 </body>
 </html>
